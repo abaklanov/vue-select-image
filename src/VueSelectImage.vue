@@ -102,6 +102,16 @@ export default {
       })
       this.$emit('onselectmultipleimage', this.multipleSelected)
     }
+  },
+  mounted () {
+    if (!this.isMultiple) {
+      let selected = this.dataImagesLocal.filter((item) => {
+        return !!item.selected
+      })
+      if (selected.length !== 0) {
+        this.singleSelected = selected[0]
+      }
+    }
   }
 }
 </script>
