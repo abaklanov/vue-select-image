@@ -37,7 +37,8 @@ export default {
       }, {
         id: '3',
         src: 'https://raw.githubusercontent.com/mazipan/vue-select-image/master/src/assets/logo-3.png',
-        alt: 'Vue.js'
+        alt: 'Vue.js',
+        selected: true
       }, {
         id: '4',
         src: 'https://raw.githubusercontent.com/mazipan/vue-select-image/master/src/assets/logo-4.png',
